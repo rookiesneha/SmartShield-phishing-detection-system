@@ -1,6 +1,6 @@
 # SmartShield – Real-Time URL Phishing Detection
 
-SmartShield is a browser-based phishing detection system that analyzes URLs in real time before page rendering.
+SmartShield is a browser-based phishing detection system that analyzes URLs in real time using chrome extension.
 
 ## Features
 - Real-time URL analysis
