@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Security Warning</title>
+
+<style>
+
+body {
+
+  font-family: Arial;
+  text-align: center;
+ font-size: 13px;
+  background:  #fae968;
+
+  color: rgb(0, 0, 0);
+  padding: 5px;
+
+}
+
+.box {
+
+  background: rgb(250, 249, 249);
+
+  padding: 5px;
+
+  border-radius: 52px;
+
+  display: inline-block;
+
+  width: 400px;
+
+}
+
+button {
+
+  margin: 2px;
+  padding: 10px 15px;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+  border-radius: 16px;
+
+}
+
+.safe {
+
+  background: #28a745;
+
+}
+
+.danger {
+
+  background: #dc3545;
+
+}
+
+.feedback {
+
+  margin-top: 20px;
+
+}
+
+.correct {
+
+  background: deepskyblue;
+
+}
+
+.wrong {
+
+  background: coral;
+  color: black;
+
+}
+
+#thankBox {
+
+  display: none;
+  width: 250px;
+  
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box" id="warningBox">
+
+  <h1> ⚠ Security Warning</h1>
+
+  <p id="url"></p>
+  <p id="result"></p>
+  <p id="confidence"></p>
+
+  <button class="danger" id="back">
+    Go Back
+  </button>
+
+  <button class="safe" id="proceed">
+    Proceed Anyway
+  </button>
+
+  <div class="feedback">
+
+    <p style="font-size: 18px;">
+      Is this prediction correct?
+    </p>
+
+    <button
+      class="correct"
+      id="correctBtn">
+
+      ✔ Correct
+
+    </button>
+
+    <button
+      class="wrong"
+      id="wrongBtn">
+
+      ✖ Wrong
+      
+
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- THANK YOU SCREEN -->
+
+<div class="box" id="thankBox" style="margin-left: 650px; margin-top: 250px; color: rgb(8, 8, 8);">
+
+  <h2>
+    ✅ Thank You!
+  </h2>
+
+  <p>
+    Your feedback has been recorded.
+  </p>
+
+  <button id="closeBtn">
+
+    Close
+
+  </button>
+
+</div>
+
+
+<script src="warning.js"></script>
+
+</body>
+</html>
